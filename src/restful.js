@@ -87,7 +87,8 @@ export default class Restful extends ValueHolder(RectPath(Shape)) {
     this._startRepeater();
   }
 
-  disposed() {
+  dispose() {
+    super.dispose();
     this._stopRepeater();
   }
 
