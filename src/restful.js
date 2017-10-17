@@ -105,7 +105,8 @@ export default class Restful extends DataSource(RectPath(Shape)) {
     this._startRepeater();
   }
 
-  disposed() {
+  dispose() {
+    super.dispose();
     this._stopRepeater();
   }
 
