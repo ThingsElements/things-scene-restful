@@ -195,6 +195,10 @@ export default class Restful extends DataSource(RectPath(Shape)) {
     context.drawImage(Restful.image, left, top, width, height);
   }
 
+  ondblclick(e) {
+    this.callAjax()
+  }
+
   get controls() { }
 
   get nature() {
