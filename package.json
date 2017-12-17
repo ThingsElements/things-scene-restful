@@ -1,8 +1,9 @@
 {
-  "name": "things-scene-restful",
+  "name": "@things-elements/things-scene-restful",
+  "flat": true,
   "version": "0.1.4",
   "description": "An element providing a starting point for your own reusable Polymer elements.",
-  "main": "index.js",
+  "main": "things-scene-restful-min.js",
   "directories": {
     "test": "test"
   },
@@ -41,5 +42,7 @@
     "gulp": "^3.8.5",
     "gulp-header-license": "^1.0.9"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@hatiolab/things-scene": "^2.2.36"
+  }
 }
