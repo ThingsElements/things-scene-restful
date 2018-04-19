@@ -26,6 +26,10 @@
   version "2.2.44"
   resolved "https://registry.yarnpkg.com/@hatiolab/things-scene/-/things-scene-2.2.44.tgz#d1577c17aee593849f6aafd3839d39495ee19466"
 
+"@hatiolab/things-scene@^2.2.44":
+  version "2.2.57"
+  resolved "https://registry.yarnpkg.com/@hatiolab/things-scene/-/things-scene-2.2.57.tgz#b48b25e5efa199dfdc96101abf25ef789d7971aa"
+
 "@hatiolab/things-shell@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@hatiolab/things-shell/-/things-shell-0.3.0.tgz#2557d678b872c2ee4f201ebccb36b4858fa21522"
@@ -545,6 +549,12 @@
   dependencies:
     "@webcomponents/shadycss" "^1.0.0"
     "@webcomponents/webcomponentsjs" "^1.0.0"
+
+"@things-scene/form@^0.2.11":
+  version "0.2.11"
+  resolved "https://registry.yarnpkg.com/@things-scene/form/-/form-0.2.11.tgz#ae331a79014bc684f7a2e0d12a05b6c7c7bbc1a1"
+  dependencies:
+    "@hatiolab/things-scene" "^2.2.44"
 
 "@tweenjs/tween.js@^16.8.0":
   version "16.11.0"
