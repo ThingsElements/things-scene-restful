@@ -134,7 +134,7 @@ export default class Restful extends DataSource(RectPath(Shape)) {
     this._abortRequest();
 
     if (this.repeatTimer)
-      clearTimeout(this._repeatTimer)
+      clearInterval(this._repeatTimer)
     this._isStarted = false;
   }
 
