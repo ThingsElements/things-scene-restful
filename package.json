@@ -1,7 +1,7 @@
 {
   "name": "@things-elements/things-scene-restful",
   "flat": true,
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "An element providing a starting point for your own reusable Polymer elements.",
   "main": "things-scene-restful-min.js",
   "directories": {
