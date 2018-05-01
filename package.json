@@ -1,6 +1,6 @@
 {
   "name": "@things-scene/restful",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "description": "Restful Client Component for Things Scene",
   "things-scene": true,
   "main": "src/index.js",
@@ -9,7 +9,8 @@
   },
   "scripts": {
     "serve": "things-shell",
-    "serve:dev": "things-shell-dev"
+    "serve:dev": "things-shell-dev",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,10 @@
   },
   "homepage": "https://github.com/ThingsElements/things-scene-restful#readme",
   "devDependencies": {
-    "@hatiolab/things-shell": "^0.4.3",
-    "@things-scene/form": "^0.2.11"
+    "@hatiolab/things-shell": "*",
+    "@things-scene/form": "*"
   },
   "dependencies": {
-    "@hatiolab/things-scene": "^2.2.36"
+    "@hatiolab/things-scene": "*"
   }
 }
