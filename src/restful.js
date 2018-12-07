@@ -25,6 +25,9 @@ const NATURE = {
       }, {
         display: 'JSON',
         value: 'json'
+      }, {
+        display: 'JSONP',
+        value: 'jsonp'
       }]
     }
   }, {
@@ -40,6 +43,7 @@ const REST_IMAGE = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKIAAACWCAMAAA
 const WARN_NO_URL = 'Valid URL property required'
 
 import { Component, DataSource, RectPath, Shape, warn } from '@hatiolab/things-scene';
+import jsonp from './jsonp'
 
 export default class Restful extends DataSource(RectPath(Shape)) {
 
@@ -164,6 +168,16 @@ export default class Restful extends DataSource(RectPath(Shape)) {
     return true;
   }
 
+  _makeRequestJsonp(url) {
+    jsonp(url, {}, (self, data) => {
+
+      if (!data)
+        return
+
+      this.data = data
+    })
+  }
+
   _abortRequest() {
     if (this.httpRequest)
       this.httpRequest.abort();
@@ -187,10 +201,18 @@ export default class Restful extends DataSource(RectPath(Shape)) {
   }
 
   callAjax() {
-    if (!this._makeRequest(this.url))
-      return;
+    var {
+      dataFormat = 'text'
+    } = this.state;
 
-    this.httpRequest.send();
+    if(dataFormat == 'jsonp') {
+      this._makeRequestJsonp(this.url)
+    } else {
+      if (!this._makeRequest(this.url))
+        return
+
+      this.httpRequest.send()
+    }
   }
 
   _draw(context) {
