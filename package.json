@@ -1,9 +1,11 @@
 {
   "name": "@things-scene/restful",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Restful Client Component for Things Scene",
   "things-scene": true,
-  "main": "src/index.js",
+  "main": "dist/things-scene-restful.js",
+  "module": "dist/things-scene-restful.mjs",
+  "jsnext:main": "dist/things-scene-restful.mjs",
   "directories": {
     "test": "test"
   },
