@@ -1,6 +1,6 @@
 {
   "name": "@things-scene/restful",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Restful Client Component for Things Scene",
   "things-scene": true,
   "main": "dist/things-scene-restful.js",
@@ -13,8 +13,8 @@
     "serve": "things-shell",
     "serve:dev": "things-shell-dev",
     "build:client": "webpack --config node_modules/@hatiolab/things-shell/webpack.config.js",
-    "build": "webpack",
-    "prepublish": "webpack"
+    "build": "rollup -c",
+    "prepublish": "rollup -c"
   },
   "repository": {
     "type": "git",
