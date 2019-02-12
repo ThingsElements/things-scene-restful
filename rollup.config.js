@@ -21,7 +21,7 @@ export default [
     external,
     output: [
       {
-        file: pkg.main,
+        file: "dist/things-scene-restful.js",
         name: "things-scene-restful",
         format: "umd",
         globals: {
