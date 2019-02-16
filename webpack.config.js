@@ -6,7 +6,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 module.exports = {
   mode: "production",
   entry: {
-    "things-scene-restful": ["./src/index.js"]
+    "things-scene-restful-ie": ["./src/index.js"]
   },
   output: {
     path: path.resolve("./dist"),
@@ -29,19 +29,23 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
-        loader: "babel-loader",
-        options: {
-          presets: [
-            [
-              "@babel/preset-env",
-              {
-                targets: {
-                  ie: 11
-                }
-              }
-            ]
-          ]
-        }
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: [
+                [
+                  "@babel/preset-env",
+                  {
+                    targets: {
+                      ie: 11
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
       },
       {
         test: /\.(gif|jpe?g|png)$/,
