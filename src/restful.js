@@ -149,6 +149,11 @@ export default class Restful extends DataSource(RectPath(Shape)) {
       }
       self.callAjax();
 
+      if (!self.period) {
+        self._stopRepeater();
+        return;
+      }
+
       self._repeatTimer = setTimeout(() => {
         requestAnimationFrame(_);
       }, self.period);
