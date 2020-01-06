@@ -1,6 +1,6 @@
 {
   "name": "@things-scene/restful",
-  "version": "0.3.11",
+  "version": "0.3.13",
   "description": "Restful Client Component for Things Scene",
   "things-scene": true,
   "main": "src/index.js",
@@ -29,8 +29,8 @@
   },
   "homepage": "https://github.com/ThingsElements/things-scene-restful#readme",
   "devDependencies": {
-    "@things-factory/board-app": "*",
-    "@things-factory/board-test": "*",
+    "@things-factory/board-app": "^2.0.0",
+    "@things-factory/board-test": "^2.0.0",
     "@things-scene/form": "*"
   },
   "dependencies": {
