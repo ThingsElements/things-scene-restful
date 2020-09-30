@@ -1,5 +1,3 @@
-import locales from './locales'
-
 import icon from './assets/restful.png';
 
 var templates = [{
@@ -19,6 +17,5 @@ var templates = [{
 }];
 
 export default {
-  templates,
-  locales
+  templates
 };
